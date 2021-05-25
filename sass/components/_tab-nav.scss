@@ -1,0 +1,74 @@
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+
+/* Rounded tabs */
+.section-tab{
+  position: relative;
+  z-index: 2;
+
+  .distributor{
+    &__item{
+      flex: 1;
+    }
+
+    &__content{
+      max-width: 400px;
+    }
+  }
+}
+
+.nav-pills .nav-link {
+  position: relative;
+  background-color: transparent;
+
+  &::after{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    background-color: currentColor;
+    left: 50%;
+    bottom: -3px;
+    transform: translateX(-50%);
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .nav-link:hover {
+  background-color: transparent;
+  &::after{
+    width: 50px;
+  }
+}
+
+.nav-link{
+  padding: inherit;
+}
+
+.nav-tabs .nav-item {
+  background-color: $color-primary;
+
+  a{
+    color: $color-white;
+  }
+
+  &:not(:last-child){
+    .nav-link::before{
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 15px;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: currentColor;
+    }
+  }
+}
+

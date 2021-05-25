@@ -1,0 +1,29 @@
+.form{
+    .form-control{
+        border-radius: 15px;
+        padding-left: 1.25rem;
+        border: none;
+        box-shadow: none;
+    }
+
+    ::-webkit-input-placeholder { /* Edge */
+        color: $color-black;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+      }
+      
+      :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: $color-black;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+      }
+      
+      ::placeholder {
+        color: $color-black;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+      }
+}

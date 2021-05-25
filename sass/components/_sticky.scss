@@ -1,0 +1,37 @@
+.nav{
+  &--primary {
+    // padding: 1.3rem 3rem;
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+  }
+}
+
+.nav-fixed {
+  &--secondary {
+    width: 100%;
+    position: fixed;
+    bottom: auto;
+    left: 0;
+    z-index: 10;
+
+    .nav-item{
+      &:first-child{
+        border-radius: 0 0 0 30px;
+      }
+
+      &:last-child{
+        border-radius: 0 0 30px 0;
+      }
+    }
+
+    //optional if you want to increase padding of the secondary nav once attached
+    .nav__items--secondary {
+      padding: 1rem 0;
+    }
+  }
+}

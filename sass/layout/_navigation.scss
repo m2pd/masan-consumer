@@ -1,0 +1,26 @@
+.header{
+    display: flex;
+    align-items: center;
+    height: $height;
+
+    .nav-link{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 40px;
+        color: $color-primary;
+        padding-right: 1.25rem;
+        padding-left: 1.25rem;
+        transition: all 0.3s ease-in-out;
+
+        &:hover{
+            color: $color-secondary;
+        }
+    }
+    
+    @media (min-width: 992px){
+        .navbar-expand-lg .navbar-nav .nav-link {
+            padding-right: 1.25rem;
+            padding-left: 1.5rem;
+        }
+    }
+}
