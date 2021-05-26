@@ -1,0 +1,53 @@
+.mapview{
+    position: relative;
+}
+
+.circle {
+    position: absolute;
+	background-color: $color-white;
+	border-radius: 50%;
+	animation: pulse-orange 2s infinite;
+
+
+    &-lg{
+        height: 40px;
+        width: 40px;
+    }
+
+    &-md{
+        height: 30px;
+        width: 30px;
+    }
+
+    &-sm{
+        height: 20px;
+        width: 20px;
+    }
+
+    &-xs{
+        height: 15px;
+        width: 15px;
+    }
+
+    &-1{
+        top: 30%;
+        left: 50%;
+    }
+    &-2{
+        top: 40%;
+        left: 65%;
+    }
+    &-3{
+        top: 40%;
+        left: 32%;
+    
+    }
+    &-4{
+        top: 78%;
+        left: 70%;
+    }
+    &-5{
+        top: 50%;
+        left: 50%;
+    }
+}

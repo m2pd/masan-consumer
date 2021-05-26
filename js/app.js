@@ -1,4 +1,10 @@
 $(document).ready(function () {
+
+  // AOS
+  AOS.init({
+    duration: 1200,
+  })
+
   // Create variables for our primary and secondary navigations
   const navPrimary = document.querySelector(".nav--primary");
   const navSecondary = document.querySelector(".nav--secondary");

@@ -15,33 +15,16 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 1em = 16px
 */
-@keyframes moveInLeft {
+@keyframes pulse-orange {
   0% {
-    opacity: 0;
-    transform: translateX(-10rem); }
-  80% {
-    transform: translateX(1rem); }
+    transform: scale(0.9);
+    box-shadow: 0 0 0 0 rgba(218, 80, 33, 0.7); }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 20px rgba(210, 80, 33, 0); }
   100% {
-    opacity: 1;
-    transform: translate(0); } }
-
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(10rem); }
-  80% {
-    transform: translateX(-1rem); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
-
-@keyframes moveInBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(3rem); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
+    transform: scale(0.9);
+    box-shadow: 0 0 0 0 rgba(210, 80, 33, 0); } }
 
 *,
 *::after,
@@ -50,9 +33,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
   padding: 0;
   box-sizing: inherit; }
 
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .container {
-    max-width: 1440px;
+    max-width: 1370px;
     padding-right: 35px;
     padding-left: 35px; } }
 
@@ -323,6 +306,42 @@ input:checked + .slider .off {
     border-radius: 0 0 30px 0; }
   .nav-fixed--secondary .nav__items--secondary {
     padding: 1rem 0; }
+
+.mapview {
+  position: relative; }
+
+.circle {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  animation: pulse-orange 2s infinite; }
+  .circle-lg {
+    height: 40px;
+    width: 40px; }
+  .circle-md {
+    height: 30px;
+    width: 30px; }
+  .circle-sm {
+    height: 20px;
+    width: 20px; }
+  .circle-xs {
+    height: 15px;
+    width: 15px; }
+  .circle-1 {
+    top: 30%;
+    left: 50%; }
+  .circle-2 {
+    top: 40%;
+    left: 65%; }
+  .circle-3 {
+    top: 40%;
+    left: 32%; }
+  .circle-4 {
+    top: 78%;
+    left: 70%; }
+  .circle-5 {
+    top: 50%;
+    left: 50%; }
 
 .form .form-control {
   border-radius: 15px;
