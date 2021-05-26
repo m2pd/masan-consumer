@@ -33,8 +33,8 @@ $(document).ready(function () {
 
 
       //add padding top to the web body to prevent jumping
-      // contentWrap.style.paddingTop = (navSecondaryTop + navPrimaryHeight) + "px";
-      contentWrap.style.paddingTop = 50 + "px";
+      contentWrap.style.paddingTop = (navSecondaryTop + navPrimaryHeight) + "px";
+      // contentWrap.style.paddingTop = 50 + "px";
 
     }
 

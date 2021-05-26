@@ -1,5 +1,5 @@
 .footer {
-    margin-top: 50px;
+    margin-top: 75px;
     padding-top: 30px;
     border-top: 1px solid #eee;
 
@@ -10,6 +10,8 @@
     
             .nav-link{
                 color: $color-secondary;
+                font-size: 15px;
+                line-height: 22px;
 
                 &::after{
                     content: none;

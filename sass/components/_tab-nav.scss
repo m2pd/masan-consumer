@@ -10,8 +10,10 @@
 .section-tab{
   position: relative;
   z-index: 2;
+  padding: 36px 0 100px;
 
   .distributor{
+    margin-top: 75px;
     &__item{
       flex: 1;
     }
@@ -20,6 +22,40 @@
       max-width: 400px;
     }
   }
+
+  .header-tab-content{
+    padding-bottom: 28px;
+    margin-bottom: 47px;
+  }
+
+  .products{
+    margin-bottom: 100px;
+
+    .product-list{
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-column-gap: 110px;
+      grid-row-gap: 20px;
+      align-items: center;
+
+      .product-item {
+        align-items: center;
+        justify-content: center;
+      }
+
+    }
+    
+  }
+
+  .box-product{
+    &:not(:last-child){
+      margin-bottom: 47px;
+    }
+  }
+}
+
+.nav-tab-list {
+  padding: 1.25rem 0;
 }
 
 .nav-pills .nav-link {
@@ -33,7 +69,7 @@
     height: 2px;
     background-color: currentColor;
     left: 50%;
-    bottom: -3px;
+    bottom: -2px;
     transform: translateX(-50%);
     transition: all 0.3s ease-in-out;
   }
@@ -52,10 +88,12 @@
 }
 
 .nav-tabs .nav-item {
-  background-color: $color-primary;
 
   a{
     color: $color-white;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   &:not(:last-child){

@@ -101,8 +101,8 @@
                                 <a class="nav-link" href="#">Liên hệ</a>
                             </li>
 
-                            <li class="nav-item d-flex align-items-center">
-                                <label class="switch mb-0"><input type="checkbox" id="togBtn">
+                            <li class="nav-item nav-link-action d-flex align-items-center">
+                                <label class="switch mb-0 "><input type="checkbox" id="togBtn">
                                     <div class="slider round">
                                         <!--ADDED HTML --><span class="on">EN</span><span class="off">VI</span>
                                         <!--END-->
@@ -112,7 +112,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="#">
+                                <a class="nav-link nav-link-action" href="#">
                                     <svg width="18" height="16" viewBox="0 0 18 16" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <line y1="1" x2="18" y2="1" stroke="#F16A23" stroke-width="2" />
@@ -137,54 +137,62 @@
             <img src="img/home-top.png" alt="home-top" class="home__background home__background--top">
             <figure class="text-center mb-0">
                 <img src="img/home-map.png" alt="home-map" class="home__background home__background--map">
-                <figcaption class="py-3 text-white">Các quốc gia và vùng lãnh thổ nhập khẩu hàng hóa của Masan
-                </figcaption>
             </figure>
-            <div class="tab-nav py-4">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 offset-md-2">
-                            <ul id="myTab" role="tablist"
-                                class="nav nav--secondary nav-tabs nav-pills flex-column flex-sm-row text-center bg-light border-0 rounded-nav">
-                                <li class="nav-item flex-sm-fill">
-                                    <a id="EU-tab" data-toggle="tab" href="#EU" role="tab" aria-controls="EU"
-                                        aria-selected="true" class="nav-link border-0 active">Châu Âu</a>
-                                </li>
-                                <li class="nav-item flex-sm-fill">
-                                    <a id="VN-tab" data-toggle="tab" href="#VN" role="tab" aria-controls="VN"
-                                        aria-selected="false" class="nav-link border-0">VN</a>
-                                </li>
-                                <li class="nav-item flex-sm-fill">
-                                    <a id="China-tab" data-toggle="tab" href="#China" role="tab" aria-controls="China"
-                                        aria-selected="false" class="nav-link border-0">China</a>
-                                </li>
-                                <li class="nav-item flex-sm-fill">
-                                    <a id="US-tab" data-toggle="tab" href="#US" role="tab" aria-controls="US"
-                                        aria-selected="false" class="nav-link border-0">US</a>
-                                </li>
-                                <li class="nav-item flex-sm-fill">
-                                    <a id="OX-tab" data-toggle="tab" href="#OX" role="tab" aria-controls="OX"
-                                        aria-selected="false" class="nav-link border-0">OX</a>
-                                </li>
-                                <li class="nav-item flex-sm-fill">
-                                    <a id="Korea-tab" data-toggle="tab" href="#Korea" role="tab" aria-controls="Korea"
-                                        aria-selected="false" class="nav-link border-0">Korea</a>
-                                </li>
-                                <li class="nav-item flex-sm-fill">
-                                    <a id="Japan-tab" data-toggle="tab" href="#Japan" role="tab" aria-controls="Japan"
-                                        aria-selected="false" class="nav-link border-0">Japan</a>
-                                </li>
-                                <li class="nav-item flex-sm-fill">
-                                    <a id="Thailan-tab" data-toggle="tab" href="#Thailan" role="tab"
-                                        aria-controls="Thailan" aria-selected="false"
-                                        class="nav-link border-0">Thailan</a>
-                                </li>
-                                <li class="nav-item flex-sm-fill">
-                                    <a id="Campuchia-tab" data-toggle="tab" href="#Campuchia" role="tab"
-                                        aria-controls="Campuchia" aria-selected="false"
-                                        class="nav-link border-0">Campuchia</a>
-                                </li>
-                            </ul>
+            <div class="tab-nav nav--secondary">
+                <p class="py-3 mb-0 text-white text-center border-full title-tab">Các quốc gia và vùng lãnh thổ nhập
+                    khẩu
+                    hàng hóa của
+                    Masan</p>
+                <div class="nav-tab-list">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 offset-md-2">
+
+                                <ul id="myTab" role="tablist"
+                                    class="nav nav-tabs nav-pills flex-column flex-sm-row text-center border-0 rounded-nav">
+                                    <li class="nav-item flex-sm-fill">
+                                        <a id="EU-tab" data-toggle="tab" href="#EU" role="tab" aria-controls="EU"
+                                            aria-selected="true" class="nav-link border-0 active">Châu Âu</a>
+                                    </li>
+                                    <li class="nav-item flex-sm-fill">
+                                        <a id="VN-tab" data-toggle="tab" href="#VN" role="tab" aria-controls="VN"
+                                            aria-selected="false" class="nav-link border-0">VN</a>
+                                    </li>
+                                    <li class="nav-item flex-sm-fill">
+                                        <a id="China-tab" data-toggle="tab" href="#China" role="tab"
+                                            aria-controls="China" aria-selected="false"
+                                            class="nav-link border-0">China</a>
+                                    </li>
+                                    <li class="nav-item flex-sm-fill">
+                                        <a id="US-tab" data-toggle="tab" href="#US" role="tab" aria-controls="US"
+                                            aria-selected="false" class="nav-link border-0">US</a>
+                                    </li>
+                                    <li class="nav-item flex-sm-fill">
+                                        <a id="OX-tab" data-toggle="tab" href="#OX" role="tab" aria-controls="OX"
+                                            aria-selected="false" class="nav-link border-0">OX</a>
+                                    </li>
+                                    <li class="nav-item flex-sm-fill">
+                                        <a id="Korea-tab" data-toggle="tab" href="#Korea" role="tab"
+                                            aria-controls="Korea" aria-selected="false"
+                                            class="nav-link border-0">Korea</a>
+                                    </li>
+                                    <li class="nav-item flex-sm-fill">
+                                        <a id="Japan-tab" data-toggle="tab" href="#Japan" role="tab"
+                                            aria-controls="Japan" aria-selected="false"
+                                            class="nav-link border-0">Japan</a>
+                                    </li>
+                                    <li class="nav-item flex-sm-fill">
+                                        <a id="Thailan-tab" data-toggle="tab" href="#Thailan" role="tab"
+                                            aria-controls="Thailan" aria-selected="false"
+                                            class="nav-link border-0">Thailan</a>
+                                    </li>
+                                    <li class="nav-item flex-sm-fill">
+                                        <a id="Campuchia-tab" data-toggle="tab" href="#Campuchia" role="tab"
+                                            aria-controls="Campuchia" aria-selected="false"
+                                            class="nav-link border-0">Campuchia</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -194,68 +202,99 @@
 
     <main>
         <section class="section-tab tab" id="tab">
-            <div class="rounded mb-5">
+            <div class="rounded">
                 <!-- Rounded tabs -->
                 <div id="myTabContent" class="tab-content content-wrap">
-                    <div id="EU" role="tabpanel" aria-labelledby="EU-tab" class="tab-pane fade  py-5 show active">
-                        <h1 class="h1-big border-full">
+                    <div id="EU" role="tabpanel" aria-labelledby="EU-tab" class="tab-pane fade show active">
+                        <h2 class="h1-big border-full header-tab-content">
                             Sản phẩm thị trường Mỹ
-                        </h1>
+                        </h2>
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-8 offset-2">
-                                    <div class="box-product pt-5">
-                                        <h2 class="h2-label-20 text-color-primary text-center mb-4">
-                                            CÀ PHÊ HÒA TAN VINACAFE VÀ NGŨ CỐC DINH DƯỠNG
-                                        </h2>
-                                        <div class="list-product d-flex align-items-center justify-content-between">
-                                            <img src="img/product1.png" alt="product">
-                                            <img src="img/product2.png" alt="product">
-                                            <img src="img/product3.png" alt="product">
-                                            <img src="img/product4.png" alt="product">
+                                    <div class="products">
+                                        <div class="box-product">
+                                            <h2 class="h2-label-20 text-color-primary text-center mb-4">
+                                                CÀ PHÊ HÒA TAN VINACAFE VÀ NGŨ CỐC DINH DƯỠNG
+                                            </h2>
+                                            <div class="product-list">
+                                                <div class="product-item"><a href="#"><img src="img/product1.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/product2.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/product3.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/product4.png"
+                                                            alt="product"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-product">
+                                            <h2 class="h2-label-20 text-color-primary text-center mb-4">
+                                                CÀ PHÊ HÒA TAN VINACAFE VÀ NGŨ CỐC DINH DƯỠNG
+                                            </h2>
+                                            <div class="product-list">
+                                                <div class="product-item"><a href="#"><img src="img/caffee1.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/caffee2.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/caffee3.png"
+                                                            alt="product"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-product">
+                                            <h2 class="h2-label-20 text-color-primary text-center mb-4">
+                                                GIA VỊ: NƯỚC TƯƠNG, NƯỚC MẮM & TƯƠNG ỚT
+                                            </h2>
+                                            <div class="product-list">
+
+                                                <div class="product-item"><a href="#"><img src="img/spice1.png"
+                                                            alt="product"></a></div>
+                                                <div class="product-item"><a href="#"><img src="img/spice2.png"
+                                                            alt="product"></a></div>
+                                                <div class="product-item"><a href="#"><img src="img/spice3.png"
+                                                            alt="product"></div></a>
+                                                <div class="product-item"><a href="#"><img src="img/spice1.png"
+                                                            alt="product"></a></div>
+                                            </div>
+                                        </div>
+                                        <div class="box-product">
+                                            <h2 class="h2-label-20 text-color-primary text-center mb-4">
+                                                MÌ ĂN LIỀN
+                                            </h2>
+                                            <div class="product-list">
+                                                <div class="product-item"><a href="#"><img src="img/noodle1.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/noodle2.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/noodle3.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/noodle4.png"
+                                                            alt="product"></a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="box-product pt-5">
-                                        <h2 class="h2-label-20 text-color-primary text-center mb-4">
-                                            CÀ PHÊ HÒA TAN VINACAFE VÀ NGŨ CỐC DINH DƯỠNG
-                                        </h2>
-                                        <div class="list-product d-flex align-items-center justify-content-between">
-                                            <img src="img/caffee1.png" alt="product">
-                                            <img src="img/caffee2.png" alt="product">
-                                            <img src="img/caffee3.png" alt="product">
-                                        </div>
-                                    </div>
-                                    <div class="box-product pt-5">
-                                        <h2 class="h2-label-20 text-color-primary text-center mb-4">
-                                            GIA VỊ: NƯỚC TƯƠNG, NƯỚC MẮM & TƯƠNG ỚT
-                                        </h2>
-                                        <div class="list-product d-flex align-items-center justify-content-between">
-                                            <img src="img/spice1.png" alt="product">
-                                            <img src="img/spice2.png" alt="product">
-                                            <img src="img/spice3.png" alt="product">
-                                            <img src="img/spice1.png" alt="product">
-                                        </div>
-                                    </div>
-                                    <div class="box-product pt-5">
-                                        <h2 class="h2-label-20 text-color-primary text-center mb-4">
-                                            MÌ ĂN LIỀN
-                                        </h2>
-                                        <div class="list-product d-flex align-items-center justify-content-between">
-                                            <img src="img/noodle1.png" alt="product">
-                                            <img src="img/noodle2.png" alt="product">
-                                            <img src="img/noodle3.png" alt="product">
-                                            <img src="img/noodle4.png" alt="product">
-                                        </div>
-                                    </div>
+
                                 </div>
-                                <div class="col-md-8 offset-2 pt-5">
+
+                                <div class="col-md-8 offset-2">
                                     <h1 class="h1-big mb-3">
                                         Nhà phân phối tại Mỹ
                                     </h1>
-                                    <h2 class="h2-new-20 text-color-secondary text-center">Lorem ipsum dolor
+                                    <h2 class="h2-new-20 text-color-secondary text-center mb-0">Lorem ipsum dolor
                                         sit
                                         amet,consectetur adipiscing elit.</h2>
-                                    <div class="distributor mt-5">
+                                    <div class="distributor">
                                         <div class="d-flex align-items-center justify-content-between">
                                             <div class="distributor__item distributor__left text-left mr-2">
                                                 <p class="h2-label- font-weight-bold text-color-black">
@@ -290,65 +329,96 @@
                         </div>
 
                     </div>
-                    <div id="VN" role="tabpanel" aria-labelledby="VN-tab" class="tab-pane fade  py-5">
-                        <h1 class="h1-big border-full">
+                    <div id="VN" role="tabpanel" aria-labelledby="VN-tab" class="tab-pane fade">
+                        <h2 class="h1-big border-full header-tab-content">
                             Sản phẩm thị trường Mỹ
-                        </h1>
+                        </h2>
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-8 offset-2">
-                                    <div class="box-product pt-5">
-                                        <h2 class="h2-label-20 text-color-primary text-center mb-4">
-                                            CÀ PHÊ HÒA TAN VINACAFE VÀ NGŨ CỐC DINH DƯỠNG
-                                        </h2>
-                                        <div class="list-product d-flex align-items-center justify-content-between">
-                                            <img src="img/product1.png" alt="product">
-                                            <img src="img/product2.png" alt="product">
-                                            <img src="img/product3.png" alt="product">
-                                            <img src="img/product4.png" alt="product">
+                                    <div class="products">
+                                        <div class="box-product">
+                                            <h2 class="h2-label-20 text-color-primary text-center mb-4">
+                                                CÀ PHÊ HÒA TAN VINACAFE VÀ NGŨ CỐC DINH DƯỠNG
+                                            </h2>
+                                            <div class="product-list">
+                                                <div class="product-item"><a href="#"><img src="img/product1.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/product2.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/product3.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/product4.png"
+                                                            alt="product"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-product">
+                                            <h2 class="h2-label-20 text-color-primary text-center mb-4">
+                                                CÀ PHÊ HÒA TAN VINACAFE VÀ NGŨ CỐC DINH DƯỠNG
+                                            </h2>
+                                            <div class="product-list">
+                                                <div class="product-item"><a href="#"><img src="img/caffee1.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/caffee2.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/caffee3.png"
+                                                            alt="product"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-product">
+                                            <h2 class="h2-label-20 text-color-primary text-center mb-4">
+                                                GIA VỊ: NƯỚC TƯƠNG, NƯỚC MẮM & TƯƠNG ỚT
+                                            </h2>
+                                            <div class="product-list">
+
+                                                <div class="product-item"><a href="#"><img src="img/spice1.png"
+                                                            alt="product"></a></div>
+                                                <div class="product-item"><a href="#"><img src="img/spice2.png"
+                                                            alt="product"></a></div>
+                                                <div class="product-item"><a href="#"><img src="img/spice3.png"
+                                                            alt="product"></div></a>
+                                                <div class="product-item"><a href="#"><img src="img/spice1.png"
+                                                            alt="product"></a></div>
+                                            </div>
+                                        </div>
+                                        <div class="box-product">
+                                            <h2 class="h2-label-20 text-color-primary text-center mb-4">
+                                                MÌ ĂN LIỀN
+                                            </h2>
+                                            <div class="product-list">
+                                                <div class="product-item"><a href="#"><img src="img/noodle1.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/noodle2.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/noodle3.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/noodle4.png"
+                                                            alt="product"></a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="box-product pt-5">
-                                        <h2 class="h2-label-20 text-color-primary text-center mb-4">
-                                            CÀ PHÊ HÒA TAN VINACAFE VÀ NGŨ CỐC DINH DƯỠNG
-                                        </h2>
-                                        <div class="list-product d-flex align-items-center justify-content-between">
-                                            <img src="img/caffee1.png" alt="product">
-                                            <img src="img/caffee2.png" alt="product">
-                                            <img src="img/caffee3.png" alt="product">
-                                        </div>
-                                    </div>
-                                    <div class="box-product pt-5">
-                                        <h2 class="h2-label-20 text-color-primary text-center mb-4">
-                                            GIA VỊ: NƯỚC TƯƠNG, NƯỚC MẮM & TƯƠNG ỚT
-                                        </h2>
-                                        <div class="list-product d-flex align-items-center justify-content-between">
-                                            <img src="img/spice1.png" alt="product">
-                                            <img src="img/spice2.png" alt="product">
-                                            <img src="img/spice3.png" alt="product">
-                                            <img src="img/spice1.png" alt="product">
-                                        </div>
-                                    </div>
-                                    <div class="box-product pt-5">
-                                        <h2 class="h2-label-20 text-color-primary text-center mb-4">
-                                            MÌ ĂN LIỀN
-                                        </h2>
-                                        <div class="list-product d-flex align-items-center justify-content-between">
-                                            <img src="img/noodle1.png" alt="product">
-                                            <img src="img/noodle2.png" alt="product">
-                                            <img src="img/noodle3.png" alt="product">
-                                            <img src="img/noodle4.png" alt="product">
-                                        </div>
-                                    </div>
+
                                 </div>
-                                <div class="col-md-8 offset-2 pt-5">
+
+                                <div class="col-md-8 offset-2 mb-5">
                                     <h1 class="h1-big mb-3">
                                         Nhà phân phối tại Mỹ
                                     </h1>
-                                    <h2 class="h2-new-20 text-color-secondary text-center">Lorem ipsum dolor
+                                    <h2 class="h2-new-20 text-color-secondary text-center mb-0">Lorem ipsum dolor
                                         sit
                                         amet,consectetur adipiscing elit.</h2>
-                                    <div class="distributor mt-5">
+                                    <div class="distributor">
                                         <div class="d-flex align-items-center justify-content-between">
                                             <div class="distributor__item distributor__left text-left mr-2">
                                                 <p class="h2-label- font-weight-bold text-color-black">
@@ -382,65 +452,96 @@
                             </div>
                         </div>
                     </div>
-                    <div id="China" role="tabpanel" aria-labelledby="China-tab" class="tab-pane fade  py-5">
-                        <h1 class="h1-big border-full">
+                    <div id="China" role="tabpanel" aria-labelledby="China-tab" class="tab-pane fade">
+                        <h2 class="h1-big border-full header-tab-content">
                             Sản phẩm thị trường Mỹ
-                        </h1>
+                        </h2>
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-8 offset-2">
-                                    <div class="box-product pt-5">
-                                        <h2 class="h2-label-20 text-color-primary text-center mb-4">
-                                            CÀ PHÊ HÒA TAN VINACAFE VÀ NGŨ CỐC DINH DƯỠNG
-                                        </h2>
-                                        <div class="list-product d-flex align-items-center justify-content-between">
-                                            <img src="img/product1.png" alt="product">
-                                            <img src="img/product2.png" alt="product">
-                                            <img src="img/product3.png" alt="product">
-                                            <img src="img/product4.png" alt="product">
+                                    <div class="products">
+                                        <div class="box-product">
+                                            <h2 class="h2-label-20 text-color-primary text-center mb-4">
+                                                CÀ PHÊ HÒA TAN VINACAFE VÀ NGŨ CỐC DINH DƯỠNG
+                                            </h2>
+                                            <div class="product-list">
+                                                <div class="product-item"><a href="#"><img src="img/product1.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/product2.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/product3.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/product4.png"
+                                                            alt="product"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-product">
+                                            <h2 class="h2-label-20 text-color-primary text-center mb-4">
+                                                CÀ PHÊ HÒA TAN VINACAFE VÀ NGŨ CỐC DINH DƯỠNG
+                                            </h2>
+                                            <div class="product-list">
+                                                <div class="product-item"><a href="#"><img src="img/caffee1.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/caffee2.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/caffee3.png"
+                                                            alt="product"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-product">
+                                            <h2 class="h2-label-20 text-color-primary text-center mb-4">
+                                                GIA VỊ: NƯỚC TƯƠNG, NƯỚC MẮM & TƯƠNG ỚT
+                                            </h2>
+                                            <div class="product-list">
+
+                                                <div class="product-item"><a href="#"><img src="img/spice1.png"
+                                                            alt="product"></a></div>
+                                                <div class="product-item"><a href="#"><img src="img/spice2.png"
+                                                            alt="product"></a></div>
+                                                <div class="product-item"><a href="#"><img src="img/spice3.png"
+                                                            alt="product"></div></a>
+                                                <div class="product-item"><a href="#"><img src="img/spice1.png"
+                                                            alt="product"></a></div>
+                                            </div>
+                                        </div>
+                                        <div class="box-product">
+                                            <h2 class="h2-label-20 text-color-primary text-center mb-4">
+                                                MÌ ĂN LIỀN
+                                            </h2>
+                                            <div class="product-list">
+                                                <div class="product-item"><a href="#"><img src="img/noodle1.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/noodle2.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/noodle3.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/noodle4.png"
+                                                            alt="product"></a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="box-product pt-5">
-                                        <h2 class="h2-label-20 text-color-primary text-center mb-4">
-                                            CÀ PHÊ HÒA TAN VINACAFE VÀ NGŨ CỐC DINH DƯỠNG
-                                        </h2>
-                                        <div class="list-product d-flex align-items-center justify-content-between">
-                                            <img src="img/caffee1.png" alt="product">
-                                            <img src="img/caffee2.png" alt="product">
-                                            <img src="img/caffee3.png" alt="product">
-                                        </div>
-                                    </div>
-                                    <div class="box-product pt-5">
-                                        <h2 class="h2-label-20 text-color-primary text-center mb-4">
-                                            GIA VỊ: NƯỚC TƯƠNG, NƯỚC MẮM & TƯƠNG ỚT
-                                        </h2>
-                                        <div class="list-product d-flex align-items-center justify-content-between">
-                                            <img src="img/spice1.png" alt="product">
-                                            <img src="img/spice2.png" alt="product">
-                                            <img src="img/spice3.png" alt="product">
-                                            <img src="img/spice1.png" alt="product">
-                                        </div>
-                                    </div>
-                                    <div class="box-product pt-5">
-                                        <h2 class="h2-label-20 text-color-primary text-center mb-4">
-                                            MÌ ĂN LIỀN
-                                        </h2>
-                                        <div class="list-product d-flex align-items-center justify-content-between">
-                                            <img src="img/noodle1.png" alt="product">
-                                            <img src="img/noodle2.png" alt="product">
-                                            <img src="img/noodle3.png" alt="product">
-                                            <img src="img/noodle4.png" alt="product">
-                                        </div>
-                                    </div>
+
                                 </div>
-                                <div class="col-md-8 offset-2 pt-5">
+
+                                <div class="col-md-8 offset-2 mb-5">
                                     <h1 class="h1-big mb-3">
                                         Nhà phân phối tại Mỹ
                                     </h1>
-                                    <h2 class="h2-new-20 text-color-secondary text-center">Lorem ipsum dolor
+                                    <h2 class="h2-new-20 text-color-secondary text-center mb-0">Lorem ipsum dolor
                                         sit
                                         amet,consectetur adipiscing elit.</h2>
-                                    <div class="distributor mt-5">
+                                    <div class="distributor">
                                         <div class="d-flex align-items-center justify-content-between">
                                             <div class="distributor__item distributor__left text-left mr-2">
                                                 <p class="h2-label- font-weight-bold text-color-black">
@@ -474,65 +575,96 @@
                             </div>
                         </div>
                     </div>
-                    <div id="US" role="tabpanel" aria-labelledby="US-tab" class="tab-pane fade  py-5">
-                        <h1 class="h1-big border-full">
+                    <div id="US" role="tabpanel" aria-labelledby="US-tab" class="tab-pane fade">
+                        <h2 class="h1-big border-full header-tab-content">
                             Sản phẩm thị trường Mỹ
-                        </h1>
+                        </h2>
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-8 offset-2">
-                                    <div class="box-product pt-5">
-                                        <h2 class="h2-label-20 text-color-primary text-center mb-4">
-                                            CÀ PHÊ HÒA TAN VINACAFE VÀ NGŨ CỐC DINH DƯỠNG
-                                        </h2>
-                                        <div class="list-product d-flex align-items-center justify-content-between">
-                                            <img src="img/product1.png" alt="product">
-                                            <img src="img/product2.png" alt="product">
-                                            <img src="img/product3.png" alt="product">
-                                            <img src="img/product4.png" alt="product">
+                                    <div class="products">
+                                        <div class="box-product">
+                                            <h2 class="h2-label-20 text-color-primary text-center mb-4">
+                                                CÀ PHÊ HÒA TAN VINACAFE VÀ NGŨ CỐC DINH DƯỠNG
+                                            </h2>
+                                            <div class="product-list">
+                                                <div class="product-item"><a href="#"><img src="img/product1.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/product2.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/product3.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/product4.png"
+                                                            alt="product"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-product">
+                                            <h2 class="h2-label-20 text-color-primary text-center mb-4">
+                                                CÀ PHÊ HÒA TAN VINACAFE VÀ NGŨ CỐC DINH DƯỠNG
+                                            </h2>
+                                            <div class="product-list">
+                                                <div class="product-item"><a href="#"><img src="img/caffee1.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/caffee2.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/caffee3.png"
+                                                            alt="product"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-product">
+                                            <h2 class="h2-label-20 text-color-primary text-center mb-4">
+                                                GIA VỊ: NƯỚC TƯƠNG, NƯỚC MẮM & TƯƠNG ỚT
+                                            </h2>
+                                            <div class="product-list">
+
+                                                <div class="product-item"><a href="#"><img src="img/spice1.png"
+                                                            alt="product"></a></div>
+                                                <div class="product-item"><a href="#"><img src="img/spice2.png"
+                                                            alt="product"></a></div>
+                                                <div class="product-item"><a href="#"><img src="img/spice3.png"
+                                                            alt="product"></div></a>
+                                                <div class="product-item"><a href="#"><img src="img/spice1.png"
+                                                            alt="product"></a></div>
+                                            </div>
+                                        </div>
+                                        <div class="box-product">
+                                            <h2 class="h2-label-20 text-color-primary text-center mb-4">
+                                                MÌ ĂN LIỀN
+                                            </h2>
+                                            <div class="product-list">
+                                                <div class="product-item"><a href="#"><img src="img/noodle1.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/noodle2.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/noodle3.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/noodle4.png"
+                                                            alt="product"></a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="box-product pt-5">
-                                        <h2 class="h2-label-20 text-color-primary text-center mb-4">
-                                            CÀ PHÊ HÒA TAN VINACAFE VÀ NGŨ CỐC DINH DƯỠNG
-                                        </h2>
-                                        <div class="list-product d-flex align-items-center justify-content-between">
-                                            <img src="img/caffee1.png" alt="product">
-                                            <img src="img/caffee2.png" alt="product">
-                                            <img src="img/caffee3.png" alt="product">
-                                        </div>
-                                    </div>
-                                    <div class="box-product pt-5">
-                                        <h2 class="h2-label-20 text-color-primary text-center mb-4">
-                                            GIA VỊ: NƯỚC TƯƠNG, NƯỚC MẮM & TƯƠNG ỚT
-                                        </h2>
-                                        <div class="list-product d-flex align-items-center justify-content-between">
-                                            <img src="img/spice1.png" alt="product">
-                                            <img src="img/spice2.png" alt="product">
-                                            <img src="img/spice3.png" alt="product">
-                                            <img src="img/spice1.png" alt="product">
-                                        </div>
-                                    </div>
-                                    <div class="box-product pt-5">
-                                        <h2 class="h2-label-20 text-color-primary text-center mb-4">
-                                            MÌ ĂN LIỀN
-                                        </h2>
-                                        <div class="list-product d-flex align-items-center justify-content-between">
-                                            <img src="img/noodle1.png" alt="product">
-                                            <img src="img/noodle2.png" alt="product">
-                                            <img src="img/noodle3.png" alt="product">
-                                            <img src="img/noodle4.png" alt="product">
-                                        </div>
-                                    </div>
+
                                 </div>
-                                <div class="col-md-8 offset-2 pt-5">
+
+                                <div class="col-md-8 offset-2 mb-5">
                                     <h1 class="h1-big mb-3">
                                         Nhà phân phối tại Mỹ
                                     </h1>
-                                    <h2 class="h2-new-20 text-color-secondary text-center">Lorem ipsum dolor
+                                    <h2 class="h2-new-20 text-color-secondary text-center mb-0">Lorem ipsum dolor
                                         sit
                                         amet,consectetur adipiscing elit.</h2>
-                                    <div class="distributor mt-5">
+                                    <div class="distributor">
                                         <div class="d-flex align-items-center justify-content-between">
                                             <div class="distributor__item distributor__left text-left mr-2">
                                                 <p class="h2-label- font-weight-bold text-color-black">
@@ -566,65 +698,96 @@
                             </div>
                         </div>
                     </div>
-                    <div id="OX" role="tabpanel" aria-labelledby="OX-tab" class="tab-pane fade  py-5">
-                        <h1 class="h1-big border-full">
+                    <div id="OX" role="tabpanel" aria-labelledby="OX-tab" class="tab-pane fade">
+                        <h2 class="h1-big border-full header-tab-content">
                             Sản phẩm thị trường Mỹ
-                        </h1>
+                        </h2>
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-8 offset-2">
-                                    <div class="box-product pt-5">
-                                        <h2 class="h2-label-20 text-color-primary text-center mb-4">
-                                            CÀ PHÊ HÒA TAN VINACAFE VÀ NGŨ CỐC DINH DƯỠNG
-                                        </h2>
-                                        <div class="list-product d-flex align-items-center justify-content-between">
-                                            <img src="img/product1.png" alt="product">
-                                            <img src="img/product2.png" alt="product">
-                                            <img src="img/product3.png" alt="product">
-                                            <img src="img/product4.png" alt="product">
+                                    <div class="products">
+                                        <div class="box-product">
+                                            <h2 class="h2-label-20 text-color-primary text-center mb-4">
+                                                CÀ PHÊ HÒA TAN VINACAFE VÀ NGŨ CỐC DINH DƯỠNG
+                                            </h2>
+                                            <div class="product-list">
+                                                <div class="product-item"><a href="#"><img src="img/product1.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/product2.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/product3.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/product4.png"
+                                                            alt="product"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-product">
+                                            <h2 class="h2-label-20 text-color-primary text-center mb-4">
+                                                CÀ PHÊ HÒA TAN VINACAFE VÀ NGŨ CỐC DINH DƯỠNG
+                                            </h2>
+                                            <div class="product-list">
+                                                <div class="product-item"><a href="#"><img src="img/caffee1.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/caffee2.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/caffee3.png"
+                                                            alt="product"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-product">
+                                            <h2 class="h2-label-20 text-color-primary text-center mb-4">
+                                                GIA VỊ: NƯỚC TƯƠNG, NƯỚC MẮM & TƯƠNG ỚT
+                                            </h2>
+                                            <div class="product-list">
+
+                                                <div class="product-item"><a href="#"><img src="img/spice1.png"
+                                                            alt="product"></a></div>
+                                                <div class="product-item"><a href="#"><img src="img/spice2.png"
+                                                            alt="product"></a></div>
+                                                <div class="product-item"><a href="#"><img src="img/spice3.png"
+                                                            alt="product"></div></a>
+                                                <div class="product-item"><a href="#"><img src="img/spice1.png"
+                                                            alt="product"></a></div>
+                                            </div>
+                                        </div>
+                                        <div class="box-product">
+                                            <h2 class="h2-label-20 text-color-primary text-center mb-4">
+                                                MÌ ĂN LIỀN
+                                            </h2>
+                                            <div class="product-list">
+                                                <div class="product-item"><a href="#"><img src="img/noodle1.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/noodle2.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/noodle3.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/noodle4.png"
+                                                            alt="product"></a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="box-product pt-5">
-                                        <h2 class="h2-label-20 text-color-primary text-center mb-4">
-                                            CÀ PHÊ HÒA TAN VINACAFE VÀ NGŨ CỐC DINH DƯỠNG
-                                        </h2>
-                                        <div class="list-product d-flex align-items-center justify-content-between">
-                                            <img src="img/caffee1.png" alt="product">
-                                            <img src="img/caffee2.png" alt="product">
-                                            <img src="img/caffee3.png" alt="product">
-                                        </div>
-                                    </div>
-                                    <div class="box-product pt-5">
-                                        <h2 class="h2-label-20 text-color-primary text-center mb-4">
-                                            GIA VỊ: NƯỚC TƯƠNG, NƯỚC MẮM & TƯƠNG ỚT
-                                        </h2>
-                                        <div class="list-product d-flex align-items-center justify-content-between">
-                                            <img src="img/spice1.png" alt="product">
-                                            <img src="img/spice2.png" alt="product">
-                                            <img src="img/spice3.png" alt="product">
-                                            <img src="img/spice1.png" alt="product">
-                                        </div>
-                                    </div>
-                                    <div class="box-product pt-5">
-                                        <h2 class="h2-label-20 text-color-primary text-center mb-4">
-                                            MÌ ĂN LIỀN
-                                        </h2>
-                                        <div class="list-product d-flex align-items-center justify-content-between">
-                                            <img src="img/noodle1.png" alt="product">
-                                            <img src="img/noodle2.png" alt="product">
-                                            <img src="img/noodle3.png" alt="product">
-                                            <img src="img/noodle4.png" alt="product">
-                                        </div>
-                                    </div>
+
                                 </div>
-                                <div class="col-md-8 offset-2 pt-5">
+
+                                <div class="col-md-8 offset-2 mb-5">
                                     <h1 class="h1-big mb-3">
                                         Nhà phân phối tại Mỹ
                                     </h1>
-                                    <h2 class="h2-new-20 text-color-secondary text-center">Lorem ipsum dolor
+                                    <h2 class="h2-new-20 text-color-secondary text-center mb-0">Lorem ipsum dolor
                                         sit
                                         amet,consectetur adipiscing elit.</h2>
-                                    <div class="distributor mt-5">
+                                    <div class="distributor">
                                         <div class="d-flex align-items-center justify-content-between">
                                             <div class="distributor__item distributor__left text-left mr-2">
                                                 <p class="h2-label- font-weight-bold text-color-black">
@@ -658,65 +821,96 @@
                             </div>
                         </div>
                     </div>
-                    <div id="Korea" role="tabpanel" aria-labelledby="Korea-tab" class="tab-pane fade  py-5">
-                        <h1 class="h1-big border-full">
+                    <div id="Korea" role="tabpanel" aria-labelledby="Korea-tab" class="tab-pane fade">
+                        <h2 class="h1-big border-full header-tab-content">
                             Sản phẩm thị trường Mỹ
-                        </h1>
+                        </h2>
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-8 offset-2">
-                                    <div class="box-product pt-5">
-                                        <h2 class="h2-label-20 text-color-primary text-center mb-4">
-                                            CÀ PHÊ HÒA TAN VINACAFE VÀ NGŨ CỐC DINH DƯỠNG
-                                        </h2>
-                                        <div class="list-product d-flex align-items-center justify-content-between">
-                                            <img src="img/product1.png" alt="product">
-                                            <img src="img/product2.png" alt="product">
-                                            <img src="img/product3.png" alt="product">
-                                            <img src="img/product4.png" alt="product">
+                                    <div class="products">
+                                        <div class="box-product">
+                                            <h2 class="h2-label-20 text-color-primary text-center mb-4">
+                                                CÀ PHÊ HÒA TAN VINACAFE VÀ NGŨ CỐC DINH DƯỠNG
+                                            </h2>
+                                            <div class="product-list">
+                                                <div class="product-item"><a href="#"><img src="img/product1.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/product2.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/product3.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/product4.png"
+                                                            alt="product"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-product">
+                                            <h2 class="h2-label-20 text-color-primary text-center mb-4">
+                                                CÀ PHÊ HÒA TAN VINACAFE VÀ NGŨ CỐC DINH DƯỠNG
+                                            </h2>
+                                            <div class="product-list">
+                                                <div class="product-item"><a href="#"><img src="img/caffee1.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/caffee2.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/caffee3.png"
+                                                            alt="product"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-product">
+                                            <h2 class="h2-label-20 text-color-primary text-center mb-4">
+                                                GIA VỊ: NƯỚC TƯƠNG, NƯỚC MẮM & TƯƠNG ỚT
+                                            </h2>
+                                            <div class="product-list">
+
+                                                <div class="product-item"><a href="#"><img src="img/spice1.png"
+                                                            alt="product"></a></div>
+                                                <div class="product-item"><a href="#"><img src="img/spice2.png"
+                                                            alt="product"></a></div>
+                                                <div class="product-item"><a href="#"><img src="img/spice3.png"
+                                                            alt="product"></div></a>
+                                                <div class="product-item"><a href="#"><img src="img/spice1.png"
+                                                            alt="product"></a></div>
+                                            </div>
+                                        </div>
+                                        <div class="box-product">
+                                            <h2 class="h2-label-20 text-color-primary text-center mb-4">
+                                                MÌ ĂN LIỀN
+                                            </h2>
+                                            <div class="product-list">
+                                                <div class="product-item"><a href="#"><img src="img/noodle1.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/noodle2.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/noodle3.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/noodle4.png"
+                                                            alt="product"></a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="box-product pt-5">
-                                        <h2 class="h2-label-20 text-color-primary text-center mb-4">
-                                            CÀ PHÊ HÒA TAN VINACAFE VÀ NGŨ CỐC DINH DƯỠNG
-                                        </h2>
-                                        <div class="list-product d-flex align-items-center justify-content-between">
-                                            <img src="img/caffee1.png" alt="product">
-                                            <img src="img/caffee2.png" alt="product">
-                                            <img src="img/caffee3.png" alt="product">
-                                        </div>
-                                    </div>
-                                    <div class="box-product pt-5">
-                                        <h2 class="h2-label-20 text-color-primary text-center mb-4">
-                                            GIA VỊ: NƯỚC TƯƠNG, NƯỚC MẮM & TƯƠNG ỚT
-                                        </h2>
-                                        <div class="list-product d-flex align-items-center justify-content-between">
-                                            <img src="img/spice1.png" alt="product">
-                                            <img src="img/spice2.png" alt="product">
-                                            <img src="img/spice3.png" alt="product">
-                                            <img src="img/spice1.png" alt="product">
-                                        </div>
-                                    </div>
-                                    <div class="box-product pt-5">
-                                        <h2 class="h2-label-20 text-color-primary text-center mb-4">
-                                            MÌ ĂN LIỀN
-                                        </h2>
-                                        <div class="list-product d-flex align-items-center justify-content-between">
-                                            <img src="img/noodle1.png" alt="product">
-                                            <img src="img/noodle2.png" alt="product">
-                                            <img src="img/noodle3.png" alt="product">
-                                            <img src="img/noodle4.png" alt="product">
-                                        </div>
-                                    </div>
+
                                 </div>
-                                <div class="col-md-8 offset-2 pt-5">
+
+                                <div class="col-md-8 offset-2 mb-5">
                                     <h1 class="h1-big mb-3">
                                         Nhà phân phối tại Mỹ
                                     </h1>
-                                    <h2 class="h2-new-20 text-color-secondary text-center">Lorem ipsum dolor
+                                    <h2 class="h2-new-20 text-color-secondary text-center mb-0">Lorem ipsum dolor
                                         sit
                                         amet,consectetur adipiscing elit.</h2>
-                                    <div class="distributor mt-5">
+                                    <div class="distributor">
                                         <div class="d-flex align-items-center justify-content-between">
                                             <div class="distributor__item distributor__left text-left mr-2">
                                                 <p class="h2-label- font-weight-bold text-color-black">
@@ -750,65 +944,96 @@
                             </div>
                         </div>
                     </div>
-                    <div id="Japan" role="tabpanel" aria-labelledby="Japan-tab" class="tab-pane fade  py-5">
-                        <h1 class="h1-big border-full">
+                    <div id="Japan" role="tabpanel" aria-labelledby="Japan-tab" class="tab-pane fade">
+                        <h2 class="h1-big border-full header-tab-content">
                             Sản phẩm thị trường Mỹ
-                        </h1>
+                        </h2>
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-8 offset-2">
-                                    <div class="box-product pt-5">
-                                        <h2 class="h2-label-20 text-color-primary text-center mb-4">
-                                            CÀ PHÊ HÒA TAN VINACAFE VÀ NGŨ CỐC DINH DƯỠNG
-                                        </h2>
-                                        <div class="list-product d-flex align-items-center justify-content-between">
-                                            <img src="img/product1.png" alt="product">
-                                            <img src="img/product2.png" alt="product">
-                                            <img src="img/product3.png" alt="product">
-                                            <img src="img/product4.png" alt="product">
+                                    <div class="products">
+                                        <div class="box-product">
+                                            <h2 class="h2-label-20 text-color-primary text-center mb-4">
+                                                CÀ PHÊ HÒA TAN VINACAFE VÀ NGŨ CỐC DINH DƯỠNG
+                                            </h2>
+                                            <div class="product-list">
+                                                <div class="product-item"><a href="#"><img src="img/product1.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/product2.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/product3.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/product4.png"
+                                                            alt="product"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-product">
+                                            <h2 class="h2-label-20 text-color-primary text-center mb-4">
+                                                CÀ PHÊ HÒA TAN VINACAFE VÀ NGŨ CỐC DINH DƯỠNG
+                                            </h2>
+                                            <div class="product-list">
+                                                <div class="product-item"><a href="#"><img src="img/caffee1.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/caffee2.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/caffee3.png"
+                                                            alt="product"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-product">
+                                            <h2 class="h2-label-20 text-color-primary text-center mb-4">
+                                                GIA VỊ: NƯỚC TƯƠNG, NƯỚC MẮM & TƯƠNG ỚT
+                                            </h2>
+                                            <div class="product-list">
+
+                                                <div class="product-item"><a href="#"><img src="img/spice1.png"
+                                                            alt="product"></a></div>
+                                                <div class="product-item"><a href="#"><img src="img/spice2.png"
+                                                            alt="product"></a></div>
+                                                <div class="product-item"><a href="#"><img src="img/spice3.png"
+                                                            alt="product"></a></div>
+                                                <div class="product-item"><a href="#"><img src="img/spice1.png"
+                                                            alt="product"></a></div>
+                                            </div>
+                                        </div>
+                                        <div class="box-product">
+                                            <h2 class="h2-label-20 text-color-primary text-center mb-4">
+                                                MÌ ĂN LIỀN
+                                            </h2>
+                                            <div class="product-list">
+                                                <div class="product-item"><a href="#"><img src="img/noodle1.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/noodle2.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/noodle3.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/noodle4.png"
+                                                            alt="product"></a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="box-product pt-5">
-                                        <h2 class="h2-label-20 text-color-primary text-center mb-4">
-                                            CÀ PHÊ HÒA TAN VINACAFE VÀ NGŨ CỐC DINH DƯỠNG
-                                        </h2>
-                                        <div class="list-product d-flex align-items-center justify-content-between">
-                                            <img src="img/caffee1.png" alt="product">
-                                            <img src="img/caffee2.png" alt="product">
-                                            <img src="img/caffee3.png" alt="product">
-                                        </div>
-                                    </div>
-                                    <div class="box-product pt-5">
-                                        <h2 class="h2-label-20 text-color-primary text-center mb-4">
-                                            GIA VỊ: NƯỚC TƯƠNG, NƯỚC MẮM & TƯƠNG ỚT
-                                        </h2>
-                                        <div class="list-product d-flex align-items-center justify-content-between">
-                                            <img src="img/spice1.png" alt="product">
-                                            <img src="img/spice2.png" alt="product">
-                                            <img src="img/spice3.png" alt="product">
-                                            <img src="img/spice1.png" alt="product">
-                                        </div>
-                                    </div>
-                                    <div class="box-product pt-5">
-                                        <h2 class="h2-label-20 text-color-primary text-center mb-4">
-                                            MÌ ĂN LIỀN
-                                        </h2>
-                                        <div class="list-product d-flex align-items-center justify-content-between">
-                                            <img src="img/noodle1.png" alt="product">
-                                            <img src="img/noodle2.png" alt="product">
-                                            <img src="img/noodle3.png" alt="product">
-                                            <img src="img/noodle4.png" alt="product">
-                                        </div>
-                                    </div>
+
                                 </div>
-                                <div class="col-md-8 offset-2 pt-5">
+
+                                <div class="col-md-8 offset-2 mb-5">
                                     <h1 class="h1-big mb-3">
                                         Nhà phân phối tại Mỹ
                                     </h1>
-                                    <h2 class="h2-new-20 text-color-secondary text-center">Lorem ipsum dolor
+                                    <h2 class="h2-new-20 text-color-secondary text-center mb-0">Lorem ipsum dolor
                                         sit
                                         amet,consectetur adipiscing elit.</h2>
-                                    <div class="distributor mt-5">
+                                    <div class="distributor">
                                         <div class="d-flex align-items-center justify-content-between">
                                             <div class="distributor__item distributor__left text-left mr-2">
                                                 <p class="h2-label- font-weight-bold text-color-black">
@@ -842,65 +1067,96 @@
                             </div>
                         </div>
                     </div>
-                    <div id="Thailan" role="tabpanel" aria-labelledby="Thailan-tab" class="tab-pane fade  py-5">
-                        <h1 class="h1-big border-full">
+                    <div id="Thailan" role="tabpanel" aria-labelledby="Thailan-tab" class="tab-pane fade">
+                        <h2 class="h1-big border-full header-tab-content">
                             Sản phẩm thị trường Mỹ
-                        </h1>
+                        </h2>
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-8 offset-2">
-                                    <div class="box-product pt-5">
-                                        <h2 class="h2-label-20 text-color-primary text-center mb-4">
-                                            CÀ PHÊ HÒA TAN VINACAFE VÀ NGŨ CỐC DINH DƯỠNG
-                                        </h2>
-                                        <div class="list-product d-flex align-items-center justify-content-between">
-                                            <img src="img/product1.png" alt="product">
-                                            <img src="img/product2.png" alt="product">
-                                            <img src="img/product3.png" alt="product">
-                                            <img src="img/product4.png" alt="product">
+                                    <div class="products">
+                                        <div class="box-product">
+                                            <h2 class="h2-label-20 text-color-primary text-center mb-4">
+                                                CÀ PHÊ HÒA TAN VINACAFE VÀ NGŨ CỐC DINH DƯỠNG
+                                            </h2>
+                                            <div class="product-list">
+                                                <div class="product-item"><a href="#"><img src="img/product1.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/product2.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/product3.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/product4.png"
+                                                            alt="product"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-product">
+                                            <h2 class="h2-label-20 text-color-primary text-center mb-4">
+                                                CÀ PHÊ HÒA TAN VINACAFE VÀ NGŨ CỐC DINH DƯỠNG
+                                            </h2>
+                                            <div class="product-list">
+                                                <div class="product-item"><a href="#"><img src="img/caffee1.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/caffee2.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/caffee3.png"
+                                                            alt="product"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-product">
+                                            <h2 class="h2-label-20 text-color-primary text-center mb-4">
+                                                GIA VỊ: NƯỚC TƯƠNG, NƯỚC MẮM & TƯƠNG ỚT
+                                            </h2>
+                                            <div class="product-list">
+
+                                                <div class="product-item"><a href="#"><img src="img/spice1.png"
+                                                            alt="product"></a></div>
+                                                <div class="product-item"><a href="#"><img src="img/spice2.png"
+                                                            alt="product"></a></div>
+                                                <div class="product-item"><a href="#"><img src="img/spice3.png"
+                                                            alt="product"></div></a>
+                                                <div class="product-item"><a href="#"><img src="img/spice1.png"
+                                                            alt="product"></a></div>
+                                            </div>
+                                        </div>
+                                        <div class="box-product">
+                                            <h2 class="h2-label-20 text-color-primary text-center mb-4">
+                                                MÌ ĂN LIỀN
+                                            </h2>
+                                            <div class="product-list">
+                                                <div class="product-item"><a href="#"><img src="img/noodle1.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/noodle2.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/noodle3.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/noodle4.png"
+                                                            alt="product"></a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="box-product pt-5">
-                                        <h2 class="h2-label-20 text-color-primary text-center mb-4">
-                                            CÀ PHÊ HÒA TAN VINACAFE VÀ NGŨ CỐC DINH DƯỠNG
-                                        </h2>
-                                        <div class="list-product d-flex align-items-center justify-content-between">
-                                            <img src="img/caffee1.png" alt="product">
-                                            <img src="img/caffee2.png" alt="product">
-                                            <img src="img/caffee3.png" alt="product">
-                                        </div>
-                                    </div>
-                                    <div class="box-product pt-5">
-                                        <h2 class="h2-label-20 text-color-primary text-center mb-4">
-                                            GIA VỊ: NƯỚC TƯƠNG, NƯỚC MẮM & TƯƠNG ỚT
-                                        </h2>
-                                        <div class="list-product d-flex align-items-center justify-content-between">
-                                            <img src="img/spice1.png" alt="product">
-                                            <img src="img/spice2.png" alt="product">
-                                            <img src="img/spice3.png" alt="product">
-                                            <img src="img/spice1.png" alt="product">
-                                        </div>
-                                    </div>
-                                    <div class="box-product pt-5">
-                                        <h2 class="h2-label-20 text-color-primary text-center mb-4">
-                                            MÌ ĂN LIỀN
-                                        </h2>
-                                        <div class="list-product d-flex align-items-center justify-content-between">
-                                            <img src="img/noodle1.png" alt="product">
-                                            <img src="img/noodle2.png" alt="product">
-                                            <img src="img/noodle3.png" alt="product">
-                                            <img src="img/noodle4.png" alt="product">
-                                        </div>
-                                    </div>
+
                                 </div>
-                                <div class="col-md-8 offset-2 pt-5">
+
+                                <div class="col-md-8 offset-2 mb-5">
                                     <h1 class="h1-big mb-3">
                                         Nhà phân phối tại Mỹ
                                     </h1>
-                                    <h2 class="h2-new-20 text-color-secondary text-center">Lorem ipsum dolor
+                                    <h2 class="h2-new-20 text-color-secondary text-center mb-0">Lorem ipsum dolor
                                         sit
                                         amet,consectetur adipiscing elit.</h2>
-                                    <div class="distributor mt-5">
+                                    <div class="distributor">
                                         <div class="d-flex align-items-center justify-content-between">
                                             <div class="distributor__item distributor__left text-left mr-2">
                                                 <p class="h2-label- font-weight-bold text-color-black">
@@ -934,65 +1190,96 @@
                             </div>
                         </div>
                     </div>
-                    <div id="Campuchia" role="tabpanel" aria-labelledby="Campuchia-tab" class="tab-pane fade  py-5">
-                        <h1 class="h1-big border-full">
+                    <div id="Campuchia" role="tabpanel" aria-labelledby="Campuchia-tab" class="tab-pane fade">
+                        <h2 class="h1-big border-full header-tab-content">
                             Sản phẩm thị trường Mỹ
-                        </h1>
+                        </h2>
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-8 offset-2">
-                                    <div class="box-product pt-5">
-                                        <h2 class="h2-label-20 text-color-primary text-center mb-4">
-                                            CÀ PHÊ HÒA TAN VINACAFE VÀ NGŨ CỐC DINH DƯỠNG
-                                        </h2>
-                                        <div class="list-product d-flex align-items-center justify-content-between">
-                                            <img src="img/product1.png" alt="product">
-                                            <img src="img/product2.png" alt="product">
-                                            <img src="img/product3.png" alt="product">
-                                            <img src="img/product4.png" alt="product">
+                                    <div class="products">
+                                        <div class="box-product">
+                                            <h2 class="h2-label-20 text-color-primary text-center mb-4">
+                                                CÀ PHÊ HÒA TAN VINACAFE VÀ NGŨ CỐC DINH DƯỠNG
+                                            </h2>
+                                            <div class="product-list">
+                                                <div class="product-item"><a href="#"><img src="img/product1.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/product2.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/product3.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/product4.png"
+                                                            alt="product"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-product">
+                                            <h2 class="h2-label-20 text-color-primary text-center mb-4">
+                                                CÀ PHÊ HÒA TAN VINACAFE VÀ NGŨ CỐC DINH DƯỠNG
+                                            </h2>
+                                            <div class="product-list">
+                                                <div class="product-item"><a href="#"><img src="img/caffee1.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/caffee2.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/caffee3.png"
+                                                            alt="product"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-product">
+                                            <h2 class="h2-label-20 text-color-primary text-center mb-4">
+                                                GIA VỊ: NƯỚC TƯƠNG, NƯỚC MẮM & TƯƠNG ỚT
+                                            </h2>
+                                            <div class="product-list">
+
+                                                <div class="product-item"><a href="#"><img src="img/spice1.png"
+                                                            alt="product"></a></div>
+                                                <div class="product-item"><a href="#"><img src="img/spice2.png"
+                                                            alt="product"></a></div>
+                                                <div class="product-item"><a href="#"><img src="img/spice3.png"
+                                                            alt="product"></div></a>
+                                                <div class="product-item"><a href="#"><img src="img/spice1.png"
+                                                            alt="product"></a></div>
+                                            </div>
+                                        </div>
+                                        <div class="box-product">
+                                            <h2 class="h2-label-20 text-color-primary text-center mb-4">
+                                                MÌ ĂN LIỀN
+                                            </h2>
+                                            <div class="product-list">
+                                                <div class="product-item"><a href="#"><img src="img/noodle1.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/noodle2.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/noodle3.png"
+                                                            alt="product"></a>
+                                                </div>
+                                                <div class="product-item"><a href="#"><img src="img/noodle4.png"
+                                                            alt="product"></a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="box-product pt-5">
-                                        <h2 class="h2-label-20 text-color-primary text-center mb-4">
-                                            CÀ PHÊ HÒA TAN VINACAFE VÀ NGŨ CỐC DINH DƯỠNG
-                                        </h2>
-                                        <div class="list-product d-flex align-items-center justify-content-between">
-                                            <img src="img/caffee1.png" alt="product">
-                                            <img src="img/caffee2.png" alt="product">
-                                            <img src="img/caffee3.png" alt="product">
-                                        </div>
-                                    </div>
-                                    <div class="box-product pt-5">
-                                        <h2 class="h2-label-20 text-color-primary text-center mb-4">
-                                            GIA VỊ: NƯỚC TƯƠNG, NƯỚC MẮM & TƯƠNG ỚT
-                                        </h2>
-                                        <div class="list-product d-flex align-items-center justify-content-between">
-                                            <img src="img/spice1.png" alt="product">
-                                            <img src="img/spice2.png" alt="product">
-                                            <img src="img/spice3.png" alt="product">
-                                            <img src="img/spice1.png" alt="product">
-                                        </div>
-                                    </div>
-                                    <div class="box-product pt-5">
-                                        <h2 class="h2-label-20 text-color-primary text-center mb-4">
-                                            MÌ ĂN LIỀN
-                                        </h2>
-                                        <div class="list-product d-flex align-items-center justify-content-between">
-                                            <img src="img/noodle1.png" alt="product">
-                                            <img src="img/noodle2.png" alt="product">
-                                            <img src="img/noodle3.png" alt="product">
-                                            <img src="img/noodle4.png" alt="product">
-                                        </div>
-                                    </div>
+
                                 </div>
-                                <div class="col-md-8 offset-2 pt-5">
+
+                                <div class="col-md-8 offset-2 mb-5">
                                     <h1 class="h1-big mb-3">
                                         Nhà phân phối tại Mỹ
                                     </h1>
-                                    <h2 class="h2-new-20 text-color-secondary text-center">Lorem ipsum dolor
+                                    <h2 class="h2-new-20 text-color-secondary text-center mb-0">Lorem ipsum dolor
                                         sit
                                         amet,consectetur adipiscing elit.</h2>
-                                    <div class="distributor mt-5">
+                                    <div class="distributor">
                                         <div class="d-flex align-items-center justify-content-between">
                                             <div class="distributor__item distributor__left text-left mr-2">
                                                 <p class="h2-label- font-weight-bold text-color-black">
@@ -1057,22 +1344,22 @@
     </main>
     <footer class="footer" id="footer">
         <div class="container">
-            <div class="footer__wrapper d-flex align-items-center justify-content-between">
+            <div class="footer__wrapper d-flex align-items-start justify-content-between">
                 <p class=" copyright text-color-secondary">
                     &copy; 2007-2021 Bản quyền của Masan Group
                 </p>
                 <ul class="nav nav-tabs nav-pills flex-column flex-sm-row text-center bg-light border-0 rounded-nav">
                     <li class="nav-item flex-sm-fill">
                         <a id="EU-tab" data-toggle="tab" href="#EU" role="tab" aria-controls="EU" aria-selected="true"
-                            class="nav-link border-0 active">Châu Âu</a>
+                            class="nav-link border-0 active">Quyền riêng tư</a>
                     </li>
                     <li class="nav-item flex-sm-fill">
                         <a id="VN-tab" data-toggle="tab" href="#VN" role="tab" aria-controls="VN" aria-selected="false"
-                            class="nav-link border-0">VN</a>
+                            class="nav-link border-0">Sơ đồ website</a>
                     </li>
                     <li class="nav-item flex-sm-fill">
                         <a id="China-tab" data-toggle="tab" href="#China" role="tab" aria-controls="China"
-                            aria-selected="false" class="nav-link border-0">China</a>
+                            aria-selected="false" class="nav-link border-0">Quy định pháp lý</a>
                     </li>
                 </ul>
             </div>

@@ -39,11 +39,6 @@ body {
     color:  $color-grey-dark;
 }
 
-.border-full{
-    border-bottom: 1px solid #EFEFEF;
-    padding-bottom: 28px;
-}
-
 .h2-new-20 {
     font-weight: bold;
     font-size: 20px;
@@ -61,6 +56,17 @@ body {
     font-size: 15px;
     line-height: 22px; 
     color: $color-black;
+}
+
+.border-full{
+    border-bottom: 1px solid #EFEFEF;
+    // padding-bottom: 28px;
+}
+
+.title-tab{
+    font-family: Questrial;
+    font-size: 24px;
+    line-height: 24px;
 }
 
 

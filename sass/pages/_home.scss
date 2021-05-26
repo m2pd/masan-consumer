@@ -1,6 +1,6 @@
 .home{
     background-color: $color-primary;
-    padding-top: 205px;
+    padding-top: calc(120px + #{$height});
     position: relative;
     // padding-bottom: $bottom-home;
 
@@ -9,7 +9,7 @@
 
     &__header {
         position: absolute;
-        top: 180px;
+        top: calc(120px + #{$height});
         z-index: 2;
         color: #fff;
         max-width: 600px;

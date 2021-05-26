@@ -7,7 +7,7 @@
 }
 
 @media (min-width: 1200px){
-    .container, .container-lg, .container-md, .container-sm, .container-xl {
+    .container {
         max-width: 1440px;
         padding-right: $paddingX;
         padding-left: $paddingX;

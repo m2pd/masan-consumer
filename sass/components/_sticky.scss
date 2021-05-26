@@ -18,6 +18,9 @@
     bottom: auto;
     left: 0;
     z-index: 10;
+    background-color: $color-primary;
+    // padding: 1.25rem 0;
+    border-radius: 0 0 30px 30px;
 
     .nav-item{
       &:first-child{
