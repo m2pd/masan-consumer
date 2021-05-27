@@ -7529,7 +7529,7 @@ input:checked + .slider .off {
   background-size: cover;
   background-position: center center;
   padding-top: 120px;
-  padding-bottom: 200px;
+  padding-bottom: 120px;
   border-radius: 0px 0px 90px 90px; }
   @media (max-width: 921px) {
     .information {
