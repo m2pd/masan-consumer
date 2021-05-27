@@ -1,9 +1,66 @@
 .form{
     .form-control{
+        height: 34px;
         border-radius: 15px;
-        padding-left: 1.25rem;
+        padding: 30px 20px;
         border: none;
         box-shadow: none;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        transition: all 0.3s ease-in-out;
+        border-bottom: 3px solid transparent;
+        color: $color-black;
+
+
+        &:focus {
+          outline: none;
+          box-shadow: 0 1rem 2rem rgba($color-black, .1);
+          border-bottom: 3px solid $color-primary;
+        }
+
+        &:focus:invalid {
+            border-bottom: 3px solid $color-secondary;
+        }
+
+        &::-webkit-input-placeholder {
+            color: $color-grey-dark-2;
+        }
+    }
+
+    .label-submit{
+      display: flex;
+      align-items: flex-end;
+      cursor: pointer;
+      color: $color-white;
+      transition: all 0.3s ease-in-out;
+
+      svg{
+        path{
+          transition: all 0.3s ease-in-out;
+
+        }
+      }
+
+
+      &:hover{
+        color: $color-primary;
+        transform: translateX(10px);
+
+        svg{
+          // transition: all 0.3s ease-in-out;
+
+          path{
+            stroke: $color-primary;
+          }
+        }
+      }
+
+      span{
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 1;
+      }
     }
 
     ::-webkit-input-placeholder { /* Edge */

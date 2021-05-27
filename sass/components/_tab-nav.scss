@@ -14,12 +14,18 @@
 
   .distributor{
     margin-top: 75px;
-    &__item{
-      flex: 1;
-    }
+    // &__item{
+    //   flex: 1;
+    // }
 
     &__content{
       max-width: 400px;
+    }
+
+    img{
+      @media (max-width: 921px) {
+        width: 100%;
+      }
     }
   }
 
@@ -31,20 +37,37 @@
   .products{
     margin-bottom: 100px;
 
-    .product-list{
-      display: grid;
-      grid-template-columns: repeat(4,1fr);
-      grid-column-gap: 110px;
-      grid-row-gap: 20px;
-      align-items: center;
-
-      .product-item {
-        align-items: center;
-        justify-content: center;
+    .product-item{
+      @media (max-width: 921px) {
+        margin-bottom: 20px;
       }
-
     }
-    
+
+    // .product-list{
+    //   display: grid;
+    //   grid-template-columns: repeat(4,1fr);
+    //   grid-column-gap: 110px;
+    //   grid-row-gap: 20px;
+    //   align-items: center;
+
+    //   @include respond(tab-land){
+    //     grid-template-columns: repeat(3,1fr);
+    //   }
+
+    //   @include respond(tab-port){
+    //     grid-template-columns: repeat(2,1fr);
+    //   }
+
+    //   @include respond(phone){
+    //     grid-template-columns: repeat(1,1fr);
+    //   }
+
+    //   .product-item {
+    //     align-items: center;
+    //     justify-content: center;
+    //   }
+    // }
+  
   }
 
   .box-product{

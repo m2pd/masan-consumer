@@ -1,10 +1,12 @@
 .footer {
-    margin-top: 75px;
+    margin-top: 50px;
     padding-top: 30px;
     border-top: 1px solid #eee;
-
+    overflow: hidden;
     .nav-tabs{
-        flex-basis: 400px;
+        width: 400px;
+        margin-left: auto;
+        
         .nav-item {
             background-color: $color-white;
     
