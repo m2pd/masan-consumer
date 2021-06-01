@@ -2,6 +2,7 @@
     background-color: $color-primary;
     padding-top: calc(120px + #{$height});
     position: relative;
+    overflow: hidden;
     // padding-bottom: $bottom-home;
 
     // height: calc(100vh - #{$height});
@@ -15,7 +16,7 @@
     &__header {
         position: absolute;
         top: calc(120px + #{$height});
-        left: 35px;
+        left: $paddingX;
         z-index: 2;
         color: #fff;
         max-width: 600px;
@@ -24,6 +25,7 @@
         @media (max-width: 921px) {
             position: relative;
             top: 0;
+            left: 0;
         }
     }
 
@@ -33,6 +35,11 @@
 
         @media (max-width: 921px) {
            width: 50%;
+        }
+
+        @media (max-width: 480px) {
+            width: 100%;
+            left: -30%;
         }
     }
 

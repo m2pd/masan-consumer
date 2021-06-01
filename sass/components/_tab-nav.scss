@@ -11,6 +11,7 @@
   position: relative;
   z-index: 2;
   padding: 36px 0 100px;
+  overflow-x: hidden;
 
   .distributor{
     margin-top: 75px;
@@ -79,6 +80,21 @@
 
 .nav-tab-list {
   padding: 1.25rem 0;
+
+  @media (max-width: 480px) {
+    padding-top: 0;
+
+    .nav-item {
+      margin-top: 10px;
+
+      .nav-link{
+        font-weight: 500;
+        padding: 0 10px;
+        font-size: 14px;
+        line-height: 24px;
+      }
+    }
+  }
 }
 
 .nav-pills .nav-link {
@@ -110,26 +126,31 @@
   padding: inherit;
 }
 
-.nav-tabs .nav-item {
+.nav-tabs{
+  flex-wrap: wrap;
 
-  a{
-    color: $color-white;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-  }
-
-  &:not(:last-child){
-    .nav-link::before{
-      content: "";
-      position: absolute;
-      width: 2px;
-      height: 15px;
-      right: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      background-color: currentColor;
+  .nav-item {
+    a{
+      color: $color-white;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  
+    &:not(:last-child){
+      .nav-link::before{
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 15px;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: currentColor;
+      }
     }
   }
-}
+
+} 
+
 

@@ -6,7 +6,7 @@ $(document).ready(function () {
   })
 
   // Create variables for our primary and secondary navigations
-  const navPrimary = document.querySelector(".nav--primary");
+  let navPrimary = document.querySelector(".nav--primary");
   const navSecondary = document.querySelector(".nav--secondary");
   const stickyWrap = document.querySelector(".sticky-wrap");
   const contentWrap = document.querySelector('.content-wrap');
@@ -23,6 +23,65 @@ $(document).ready(function () {
 
   // Get the whole hero section (.sticky-wrap) that wraps top nav, hero content and bottom nav, get it's bottom position and then take away the height of the secondary nav and add the number of pixels the doc has currently scrolled
   let navSecondaryOrigPos = stickyWrap.getBoundingClientRect().bottom - navSecondaryHeight + window.pageYOffset;
+
+  let mq = window.matchMedia("(min-width: 921px)");
+
+
+
+  //Mobile
+  $('#navbav_menu').on('shown.bs.collapse', function () {
+    navPrimaryHeight = navPrimary.getBoundingClientRect().height;
+    navSecondary.style.top = navPrimaryHeight + "px";
+    navSecondary.style.opacity = 1;
+
+
+    throttled(200, window.addEventListener("change", stickyNavInit));
+  })
+
+  $('#navbav_menu').on('show.bs.collapse', function () {
+
+    navSecondary.style.opacity = 0;
+    navSecondary.style.transition = "all 0.5s";
+  })
+
+  $('#navbav_menu').on('hidden.bs.collapse', function () {
+    navPrimaryHeight = navPrimary.getBoundingClientRect().height;
+    navSecondary.style.top = navPrimaryHeight + "px";
+
+    throttled(200, window.addEventListener("change", stickyNavInit));
+  })
+
+  $('#navbav_menu').on('shown.bs.dropdown', function () {
+    navPrimaryHeight = navPrimary.getBoundingClientRect().height;
+    navSecondary.style.top = navPrimaryHeight + "px";
+
+    throttled(200, window.addEventListener("change", stickyNavInit));
+  })
+
+  $('#navbav_menu').on('hidden.bs.dropdown', function () {
+    navPrimaryHeight = navPrimary.getBoundingClientRect().height;
+    navSecondary.style.top = navPrimaryHeight + "px";
+
+    throttled(200, window.addEventListener("change", stickyNavInit));
+  })
+
+  // $(".dropdown").click(function (e) {
+  //   e.stopPropagation();
+  // })
+
+
+
+  // $('.navbar').on('hide.bs.collapse', function () {
+  //   navPrimaryHeight = navPrimary.getBoundingClientRect().height;
+  //   navSecondary.style.top = navPrimaryHeight + "px";
+
+  //   console.log(navPrimaryHeight)
+  // })
+
+  // if($('.navbar-toggler').hasClass('show')){
+  //   console.log('123')
+  // }
+
 
   // The function that ensures the nav shows if the user refreshes the page, scrolled past the hero section
   function stickyNavInit() {
