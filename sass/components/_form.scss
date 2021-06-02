@@ -24,8 +24,13 @@
         }
 
         &::-webkit-input-placeholder {
-            color: $color-grey-dark-2;
+            color: $color-black;
         }
+
+        @media only screen and (max-width: 480px){
+          border-radius: 10px;
+          padding: 25px 20px;
+      }
     }
 
     .label-submit{
