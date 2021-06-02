@@ -7401,6 +7401,12 @@ body {
     .line-mobile {
       display: block; } }
 
+.line-flex-lg {
+  display: flex; }
+  @media (max-width: 768px) {
+    .line-flex-lg {
+      display: none; } }
+
 .switch {
   position: relative;
   display: inline-block;
@@ -7512,16 +7518,9 @@ input:checked + .slider .off {
 
 .nav-tab-list {
   padding: 1.25rem 0; }
-  @media (max-width: 480px) {
+  @media (max-width: 768px) {
     .nav-tab-list {
-      padding-top: 0; }
-      .nav-tab-list .nav-item {
-        margin-top: 10px; }
-        .nav-tab-list .nav-item .nav-link {
-          font-weight: 500;
-          padding: 0 10px;
-          font-size: 14px;
-          line-height: 24px; } }
+      padding-top: 0; } }
 
 .nav-pills .nav-link {
   position: relative;
@@ -7549,20 +7548,32 @@ input:checked + .slider .off {
 
 .nav-tabs {
   flex-wrap: wrap; }
-  .nav-tabs .nav-item a {
-    color: #fff;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px; }
-  .nav-tabs .nav-item:not(:last-child) .nav-link::before {
-    content: "";
-    position: absolute;
-    width: 2px;
-    height: 15px;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: currentColor; }
+  .nav-tabs .nav-item {
+    flex: auto; }
+    @media (max-width: 768px) {
+      .nav-tabs .nav-item {
+        flex: initial;
+        margin-top: 10px; }
+        .nav-tabs .nav-item .nav-link {
+          font-weight: 500;
+          padding: 0 10px;
+          font-size: 14px;
+          line-height: 24px; } }
+    .nav-tabs .nav-item a {
+      color: #fff;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      padding: 0 10px; }
+    .nav-tabs .nav-item:not(:last-child) .nav-link::before {
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 15px;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: currentColor; }
 
 .information {
   background-image: url(../img/information.png);
@@ -7708,15 +7719,19 @@ input:checked + .slider .off {
       padding-top: 15px;
       padding-bottom: 15px; } }
   .footer .nav-tabs {
-    max-width: 400px;
-    margin-left: auto; }
+    justify-content: flex-end; }
     @media only screen and (max-width: 920px) {
       .footer .nav-tabs {
         margin-left: 0;
-        align-items: flex-start; } }
+        align-items: flex-start; }
+        .footer .nav-tabs .nav-link {
+          margin-bottom: 15px; }
+          .footer .nav-tabs .nav-link::before {
+            content: none; } }
     .footer .nav-tabs .nav-item {
       background-color: #fff;
-      flex-basis: auto; }
+      flex-basis: initial;
+      flex: initial; }
       .footer .nav-tabs .nav-item .nav-link {
         color: #074FA0;
         font-size: 15px;

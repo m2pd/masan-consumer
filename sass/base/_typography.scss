@@ -101,9 +101,20 @@ body {
 
 }
 
-.line-mobile{
-    display: none;
-    @media (max-width: 480px) {
-        display: block;
+.line{
+    &-mobile{
+        display: none;
+    
+        @media (max-width: 480px) {
+            display: block;
+        }
+    }
+
+    &-flex-lg{
+        display: flex;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
     }
 }

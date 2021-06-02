@@ -10,17 +10,25 @@
     }
 
     .nav-tabs{
-        max-width: 400px;
-        margin-left: auto;
+        justify-content: flex-end;
 
         @media only screen and (max-width: 920px) {
             margin-left: 0;
             align-items: flex-start;
+
+            .nav-link{
+                margin-bottom: 15px;
+
+                    &::before{
+                        content: none ;
+                }
+            }
         }
         
         .nav-item {
             background-color: $color-white;
-            flex-basis: auto;
+            flex-basis: initial;
+            flex: initial;
     
             .nav-link{
                 color: $color-secondary;
