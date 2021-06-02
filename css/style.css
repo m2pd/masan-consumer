@@ -7736,7 +7736,8 @@ input:checked + .slider .off {
         margin-left: 0;
         align-items: flex-start; }
         .footer .nav-tabs .nav-link {
-          margin-bottom: 15px; }
+          margin-bottom: 15px;
+          padding: 0; }
           .footer .nav-tabs .nav-link::before {
             content: none; } }
     .footer .nav-tabs .nav-item {
