@@ -5,6 +5,11 @@ $(document).ready(function () {
     duration: 1200,
   })
 
+  //Refresh animation AOS after change tab
+  $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+    AOS.refresh()
+  })
+
   // Create variables for our primary and secondary navigations
   let navPrimary = document.querySelector(".nav--primary");
   const navSecondary = document.querySelector(".nav--secondary");

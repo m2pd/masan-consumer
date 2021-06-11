@@ -14,7 +14,22 @@
   overflow-x: hidden;
 
   .distributor{
-    margin-top: 75px;
+
+    &__head{
+      margin-bottom: 74px;
+    }
+
+    &__item{
+      &:not(:last-child){
+        margin-bottom: 47px;
+      }
+    }
+
+    &__right{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
 
     @media only screen and (max-width: 480px){
       margin-top: 30px;
@@ -37,7 +52,7 @@
   }
 
   .products{
-    margin-bottom: 100px;
+    margin-bottom: 70px;
 
     .product-item{
       @media (max-width: 921px) {
@@ -74,8 +89,13 @@
 
   .box-product{
     &:not(:last-child){
-      margin-bottom: 47px;
+      margin-bottom: 17px;
     }
+
+    .product-item{
+      margin-bottom: 30px;
+    }
+
   }
 }
 
@@ -108,7 +128,7 @@
 .nav-pills .nav-link:hover {
   background-color: transparent;
   &::after{
-    width: 50px;
+    width: 50%;
   }
 }
 
