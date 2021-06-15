@@ -6,6 +6,15 @@ body {
     color: $color-grey-dark;
 }
 
+a{
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    &:hover{
+        text-decoration: none;
+        color: $color-primary;
+    }
+}
+
 .text-color-primary{
     color: $color-primary;
 }
@@ -16,6 +25,10 @@ body {
 
 .text-color-black{
     color: $color-black;
+}
+
+.text-color-white{
+    color: $color-white;
 }
 
 
@@ -67,6 +80,17 @@ body {
 
     @media only screen and (max-width: 480px){
         font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+.h2-18-semib{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+
+    @media only screen and (max-width: 480px){
+        font-size: 14px;
         line-height: 24px;
     }
 }
