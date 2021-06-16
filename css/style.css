@@ -7592,6 +7592,9 @@ input:checked + .slider .off {
           padding: 0 10px;
           font-size: 14px;
           line-height: 24px; } }
+    @media (max-width: 480px) {
+      .nav-tabs .nav-item .nav-link {
+        font-size: 11px; } }
     .nav-tabs .nav-item a {
       color: #fff;
       font-weight: 500;

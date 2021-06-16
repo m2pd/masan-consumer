@@ -154,6 +154,12 @@
       }
     }
 
+    @media (max-width: 480px){
+      .nav-link{
+        font-size: 11px;
+      }
+    }
+
     a{
       color: $color-white;
       font-weight: 500;
